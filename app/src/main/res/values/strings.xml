@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Presensi QR</string>
+    <string name="app_name2">ATTENDACEUB</string>
+
+    <!--Login-->
+    <string name="login_username_text">Username</string>
+    <string name="login_password_text">Password</string>
+    <string name="login_forgot_text">Forgot your password?</string>
+    <string name="login_button_mahasiswa">Login Mahasiswa</string>
+    <string name="login_button_dosen">Login Dosen</string>
+
+    <!--Home Dosen-->
+    <string name="home_question">SCAN QR CODE TO ATTENDANCE (?)</string>
+
+    <!--Home Mahasiswa-->
+    <string name="home_mhs_today_shcedule">Today Schedule</string>
+    <string name="home_mhs_all_shcedule">All Schedule</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RekapActivity"
+    android:background="@color/biru">
+
+    <TextView
+        android:id="@+id/rekap_dayTv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_text_view"
+        android:elevation="2dp"
+        android:padding="5dp"
+        android:text="recap"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rekap_cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        app:cardBackgroundColor="@color/krem"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rekap_dayTv">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rekap_recyclerView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="30dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/rekap_totalKelasTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="total kelas"
+                        android:textAllCaps="true"
+                        android:textColor="@color/biru_tua"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/rekap_recyclerView"
+                        app:layout_constraintTop_toBottomOf="@+id/rekap_recyclerView" />
+
+                    <TextView
+                        android:id="@+id/rekap_totalHadirTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="total kehadiran"
+                        android:textAllCaps="true"
+                        android:textColor="@color/biru_tua"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/rekap_totalKelasTv"
+                        app:layout_constraintTop_toBottomOf="@+id/rekap_totalKelasTv" />
+
+                    <TextView
+                        android:id="@+id/rekap_totalTdkHadirTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="total tidak hadir"
+                        android:textAllCaps="true"
+                        android:textColor="@color/biru_tua"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/rekap_totalHadirTv"
+                        app:layout_constraintTop_toBottomOf="@+id/rekap_totalHadirTv" />
+
+                    <TextView
+                        android:id="@+id/rekap_presentasiHadirTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="presentase kehadiran"
+                        android:textAllCaps="true"
+                        android:textColor="@color/biru_tua"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/rekap_totalTdkHadirTv"
+                        app:layout_constraintTop_toBottomOf="@+id/rekap_totalTdkHadirTv" />
+
+                    <TextView
+                        android:id="@+id/rekap_lihatKedatanganTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="lihat kedatangan perkelas"
+                        android:textAllCaps="true"
+                        android:textColor="@color/biru_tua"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/rekap_presentasiHadirTv"
+                        app:layout_constraintTop_toBottomOf="@+id/rekap_presentasiHadirTv" />
+                </android.support.constraint.ConstraintLayout>
+            </ScrollView>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/rekap_matkulTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bg_text_view"
+        android:elevation="2dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:text="Mata Kuliah"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rekap_cardView"
+        app:layout_constraintEnd_toEndOf="@+id/rekap_cardView"
+        app:layout_constraintStart_toStartOf="@+id/rekap_cardView"
+        app:layout_constraintTop_toTopOf="@+id/rekap_cardView" />
+
+
+</android.support.constraint.ConstraintLayout>

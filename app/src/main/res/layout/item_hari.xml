@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/rekap_dayTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Day2"
+        android:textColor="@color/biru_tua"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/rekap_classroomTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="classroom"
+        android:textAllCaps="true"
+        android:textColor="@color/biru_tua"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/rekap_dayTv"
+        app:layout_constraintTop_toBottomOf="@+id/rekap_dayTv" />
+
+    <TextView
+        android:id="@+id/rekap_pukulTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jam"
+        android:textAllCaps="true"
+        android:textColor="@color/biru_tua"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/rekap_classroomTv"
+        app:layout_constraintTop_toBottomOf="@+id/rekap_classroomTv" />
+
+</android.support.constraint.ConstraintLayout>

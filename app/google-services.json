@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "12604479058",
+    "firebase_url": "https://presensiqr.firebaseio.com",
+    "project_id": "presensiqr",
+    "storage_bucket": "presensiqr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12604479058:android:f92ee098b4268c25",
+        "android_client_info": {
+          "package_name": "com.rookie.presensiqr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12604479058-h2bq22t7negorosep3cklq8vhge9evid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rookie.presensiqr",
+            "certificate_hash": "a4f4c3e41803ade6dee7541ef15405e95c348c92"
+          }
+        },
+        {
+          "client_id": "12604479058-r2op9fk4897h7bgjtfjhvj5oe3r87i67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkb_oZ87lWJixvaPJLGw-0I5cFP4KwXBM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12604479058-r2op9fk4897h7bgjtfjhvj5oe3r87i67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
